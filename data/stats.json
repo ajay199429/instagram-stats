@@ -1,0 +1,30 @@
+{
+  "last_updated": "2024-01-01",
+  "source": "DataReportal / Statista 2024",
+  "global": {
+    "monthly_active_users": 2000000000,
+    "daily_active_users": 500000000,
+    "daily_stories": 500000000,
+    "posts_per_day": 100000000
+  },
+  "yearly_growth": [
+    { "year": 2018, "mau": 1000000000 },
+    { "year": 2019, "mau": 1200000000 },
+    { "year": 2020, "mau": 1400000000 },
+    { "year": 2021, "mau": 1600000000 },
+    { "year": 2022, "mau": 1800000000 },
+    { "year": 2023, "mau": 2000000000 }
+  ],
+  "top_countries": [
+    { "rank": 1,  "country": "India",          "flag": "🇮🇳", "users": 362900000, "pct": 18.1 },
+    { "rank": 2,  "country": "United States",   "flag": "🇺🇸", "users": 169650000, "pct": 8.5  },
+    { "rank": 3,  "country": "Brazil",          "flag": "🇧🇷", "users": 134600000, "pct": 6.7  },
+    { "rank": 4,  "country": "Indonesia",       "flag": "🇮🇩", "users": 100390000, "pct": 5.0  },
+    { "rank": 5,  "country": "Turkey",          "flag": "🇹🇷", "users": 57140000,  "pct": 2.9  },
+    { "rank": 6,  "country": "Japan",           "flag": "🇯🇵", "users": 55400000,  "pct": 2.8  },
+    { "rank": 7,  "country": "Mexico",          "flag": "🇲🇽", "users": 40200000,  "pct": 2.0  },
+    { "rank": 8,  "country": "United Kingdom",  "flag": "🇬🇧", "users": 31800000,  "pct": 1.6  },
+    { "rank": 9,  "country": "Germany",         "flag": "🇩🇪", "users": 31700000,  "pct": 1.6  },
+    { "rank": 10, "country": "Argentina",       "flag": "🇦🇷", "users": 28000000,  "pct": 1.4  }
+  ]
+}

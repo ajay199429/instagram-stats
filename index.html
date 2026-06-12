@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram Global Stats Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">gram<span>stats</span></div>
+    <span class="last-updated" id="last-updated">Loading...</span>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Instagram by the<br><em>numbers.</em></h1>
+    <p>Global user statistics, country breakdown, and growth trends — sourced from DataReportal & Statista.</p>
+  </section>
+
+  <!-- STAT CARDS -->
+  <div class="cards">
+    <div class="card">
+      <div class="card-label">Monthly Active Users</div>
+      <div class="card-value highlight" id="mau">—</div>
+      <div class="card-sub">Worldwide MAU</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Daily Active Users</div>
+      <div class="card-value" id="dau">—</div>
+      <div class="card-sub">Estimated DAU</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Daily Stories</div>
+      <div class="card-value" id="stories">—</div>
+      <div class="card-sub">Stories posted per day</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Daily Posts</div>
+      <div class="card-value" id="posts">—</div>
+      <div class="card-sub">Photos & videos per day</div>
+    </div>
+  </div>
+
+  <!-- GROWTH CHART -->
+  <div class="section">
+    <div class="section-title">Monthly Active Users — Year Over Year Growth</div>
+    <div class="chart-wrap">
+      <div class="chart-bars" id="chart-bars"></div>
+    </div>
+  </div>
+
+  <!-- COUNTRY TABLE -->
+  <div class="section">
+    <div class="section-title">Top 10 Countries by User Base — click a row for details</div>
+    <table class="country-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Country</th>
+          <th class="bar-cell"></th>
+          <th>Users</th>
+          <th style="text-align:right">Share</th>
+        </tr>
+      </thead>
+      <tbody id="country-tbody"></tbody>
+    </table>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <button class="modal-close" id="modal-close">✕</button>
+      <h2 id="modal-title"></h2>
+      <p class="modal-meta" id="modal-rank"></p>
+      <div class="modal-stat">
+        <span class="modal-stat-label">Total Users</span>
+        <span class="modal-stat-value" id="modal-users"></span>
+      </div>
+      <div class="modal-stat">
+        <span class="modal-stat-label">Share of Global Users</span>
+        <span class="modal-stat-value" id="modal-pct"></span>
+      </div>
+      <div class="modal-stat">
+        <span class="modal-stat-label">% of Total Instagram (2B)</span>
+        <span class="modal-stat-value" id="modal-penetration"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    Data sourced from <a href="https://datareportal.com" target="_blank">DataReportal</a> &
+    <a href="https://statista.com" target="_blank">Statista</a>. Updated annually. Not affiliated with Meta.
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
